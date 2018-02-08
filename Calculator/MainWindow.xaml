@@ -8,11 +8,12 @@
         Title="Calculator" Height="430" Width="280" Icon="calculator_icon.ico">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="14*" />
-            <ColumnDefinition Width="12"/>
-            <ColumnDefinition Width="17*" />
-            <ColumnDefinition Width="17*" />
-            <ColumnDefinition Width="17*" />
+            <ColumnDefinition />
+            <ColumnDefinition Width="0"/>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition />
@@ -24,15 +25,15 @@
         </Grid.RowDefinitions>
 
         <!-- Number buttons -->
-        <Button x:Name="btn7" FontSize="30" Background="Yellow" Grid.Row="2" Grid.Column="0" Click="btn7_Click" Grid.ColumnSpan="2">7</Button>
+        <Button x:Name="btn7" FontSize="30" Background="Yellow" Grid.Row="2" Grid.Column="0" Click="btn7_Click">7</Button>
         <Button x:Name="btn8" FontSize="30" Background="Yellow" Grid.Row="2" Grid.Column="2" Click="btn8_Click">8</Button>
         <Button x:Name="btn9" FontSize="30" Background="Yellow" Grid.Row="2" Grid.Column="3" Click="btn9_Click">9</Button>
 
-        <Button x:Name="btn4" FontSize="30" Background="Yellow" Grid.Row="3" Grid.Column="0" Click="btn4_Click" Grid.ColumnSpan="2">4</Button>
+        <Button x:Name="btn4" FontSize="30" Background="Yellow" Grid.Row="3" Grid.Column="0" Click="btn4_Click">4</Button>
         <Button x:Name="btn5" FontSize="30" Background="Yellow" Grid.Row="3" Grid.Column="2" Click="btn5_Click">5</Button>
         <Button x:Name="btn6" FontSize="30" Background="Yellow" Grid.Row="3" Grid.Column="3" Click="btn6_Click">6</Button>
 
-        <Button x:Name="btn1" FontSize="30" Background="Yellow" Grid.Row="4" Grid.Column="0" Click="btn1_Click" Grid.ColumnSpan="2">1</Button>
+        <Button x:Name="btn1" FontSize="30" Background="Yellow" Grid.Row="4" Grid.Column="0" Click="btn1_Click">1</Button>
         <Button x:Name="btn2" FontSize="30" Background="Yellow" Grid.Row="4" Grid.Column="2" Click="btn2_Click">2</Button>
         <Button x:Name="btn3" FontSize="30" Background="Yellow" Grid.Row="4" Grid.Column="3" Click="btn3_Click">3</Button>
 
@@ -46,18 +47,18 @@
         <Button x:Name="btnEquals" FontSize="30" Background="White" Grid.Row="5" Grid.Column="4" Click="btnEquals_Click">=</Button>
 
         <!-- Clear Buttons -->
-        <Button x:Name="btnClearEntry" FontSize="30" Background="Red" Grid.Row="1" Grid.Column="0" Click="btnClearEntry_Click" Grid.ColumnSpan="2">CE</Button>
+        <Button x:Name="btnClearEntry" FontSize="30" Background="Red" Grid.Row="1" Grid.Column="0" Click="btnClearEntry_Click">CE</Button>
         <Button x:Name="btnClear" FontSize="30" Background="Red" Grid.Row="1" Grid.Column="2" Click="btnClear_Click">C</Button>
         <Button x:Name="btnBackspace" FontSize="30" Background="Red" Grid.Row="1" Grid.Column="3" Click="btnBackspace_Click">&lt;=</Button>
 
         <!-- Positive and negative button -->
-        <Button x:Name="btnPosNeg"  FontSize="30" Background="Yellow" Grid.Row="5" Grid.Column="0" Click="btnPosNeg_Click" Grid.ColumnSpan="2">+-</Button>
+        <Button x:Name="btnPosNeg"  FontSize="30" Background="Yellow" Grid.Row="5" Grid.Column="0" Click="btnPosNeg_Click">+-</Button>
 
         <!-- number 0.0 -->
         <Button x:Name="btnDot" FontSize="30" Background="Yellow" Grid.Row="5" Grid.Column="3" Click="btnDot_Click">.</Button>
 
         <!-- Displayu text box-->
-        <TextBox x:Name="txtDisplay"  IsReadOnly="True" TextAlignment="Right" VerticalAlignment="Bottom" FontSize="30" BorderThickness="0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5">0</TextBox>
+        <TextBox x:Name="txtDisplay"  IsReadOnly="True" TextAlignment="Right" VerticalAlignment="Bottom" FontSize="30" BorderThickness="0" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" Height="40">0</TextBox>
 
     </Grid>
 </Window>

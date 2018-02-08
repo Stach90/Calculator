@@ -244,7 +244,14 @@ namespace Calculator
 
         private void btnBackspace_Click(object sender, RoutedEventArgs e)
         {
-            txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1, 1);
+            if (txtDisplay.Text == "")
+            {
+                return;
+            }
+            else
+            {
+                txtDisplay.Text = txtDisplay.Text.Remove(txtDisplay.Text.Length - 1, 1);
+            }
         }
 
         //
